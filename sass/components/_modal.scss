@@ -13,16 +13,26 @@
 }
 .modal {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
+  left: 15px;
+  right: 15px;
   padding: 40px;
   background: $white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   text-align: center;
+  @media screen and (min-width: 480px) {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+  }
+  @media screen and (min-width: 780px) {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+  }
 }
 .close-btn {
   position: absolute;
@@ -49,10 +59,7 @@
 
 .order-container {
   .input {
-    padding-top: 11px;
-    padding-right: 11px;
-    padding-bottom: 11px;
-    padding-left: 15px;
+    padding: 11px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
   }
@@ -66,7 +73,7 @@
 .modal-title {
   margin-bottom: 12px;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
 }
 .order-list {
@@ -120,6 +127,10 @@
 }
 .rules-accept-container {
   position: relative;
+  left: 0px;
+  font-size: 12px;
+  line-height: 1.166;
+  position: relative;
   left: 12px;
   display: block;
   margin-bottom: 30px;
@@ -134,19 +145,17 @@
 }
 .checkbox-icon {
   position: absolute;
-  top: 50%;
-  left: 0px;
-  transform: translateY(-50%);
+  left: -8px;
   display: inline-block;
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  background-image: url(../images/uncheked.svg);
+  background-image: url(../../images/svg/uncheked.svg);
   background-repeat: no-repeat;
 }
 .original-chekbox:checked + .checkbox-icon {
   background-color: $accent-cl;
-  background-image: url(../images/checked.svg);
+  background-image: url(../../images/svg/checked.svg);
   border-radius: 4px;
 }
 .send-btn {

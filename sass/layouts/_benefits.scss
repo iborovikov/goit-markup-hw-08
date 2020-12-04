@@ -1,21 +1,69 @@
 .benefits-section {
-  display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
+
 .benefits-title {
   margin-bottom: 10px;
   line-height: 1.143;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
+  @media screen and (min-width: 480px) {
+    text-align: left;
+  }
+}
+
+.benefits-list {
+  @media screen and (max-width: 479px) {
+    .item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    .item:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+    .item:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  .item {
+    @media screen and (min-width: 480px) {
+      width: calc((100% - 4 * 15px) / 2);
+    }
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 8 * 15px) / 4);
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    .item:nth-child(3) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .benefits-list {
   .item::before {
     content: '';
     display: block;
-    width: 270px;
+    width: 100%;
     height: 120px;
-    margin-bottom: 30px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: $lite-bg;
@@ -23,26 +71,21 @@
 }
 .benefits-list {
   .antena-icon:before {
-    background-image: url(../images/antenna.svg);
+    background-image: url(../../images/svg/antenna.svg);
   }
 }
 .benefits-list {
   .clock-icon::before {
-    background-image: url(../images/clock.svg);
+    background-image: url(../../images/svg/clock.svg);
   }
 }
 .benefits-list {
   .diagram-icon::before {
-    background-image: url(../images/diagram.svg);
+    background-image: url(../../images/svg/diagram.svg);
   }
 }
 .benefits-list {
   .astronaut-icon::before {
-    background-image: url(../images/astronaut.svg);
-  }
-}
-.benefits-list {
-  .item:not(:last-child) {
-    margin-right: 30px;
+    background-image: url(../../images/svg/astronaut.svg);
   }
 }

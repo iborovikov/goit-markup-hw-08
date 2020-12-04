@@ -69,12 +69,30 @@ textarea {
   resize: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
-  width: 1200px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    min-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
 }
 
 .link {
@@ -99,7 +117,6 @@ textarea {
 }
 
 .list {
-  display: flex;
   padding: 0px;
   margin: 0px;
   list-style: none;
@@ -317,54 +334,80 @@ textarea {
   margin-left: 10px;
 }
 
-.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  height: 252px;
-  background-color: #2f303a;
+.header-logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.footer-container {
-  position: relative;
+.navigation {
   display: flex;
+  align-items: center;
 }
 
-.footer-logo {
-  display: block;
-  color: #ffffff;
-  margin-bottom: 20px;
+.menu .item {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 25px;
 }
 
-.adress {
-  display: block;
-  padding-bottom: 9px;
-  color: #ffffff;
-  font-style: normal;
+.menu .item:not(:last-child) {
+  margin-right: 50px;
 }
 
-.connect {
-  margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 1.142;
-  text-transform: uppercase;
-  text-align: left;
-  color: #ffffff;
+.link.active-page {
+  color: #2196f3;
 }
 
-.footer-contacts-links {
-  font-weight: 400;
-  line-height: 1.714;
-  letter-spacing: inherit;
-  color: rgba(255, 255, 255, 0.6);
+.active-page::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  align-items: flex-end;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #2196f3;
 }
 
-.footer-contacts {
-  font-style: normal;
-  display: block;
+.contacts-container {
+  margin-right: 70px;
 }
 
-.footer-contacts .item:not(:last-child) {
-  padding-bottom: 9px;
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contacts .link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header-contacts .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+}
+
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.phone-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .portfolio-section {
@@ -452,79 +495,53 @@ textarea {
   line-height: 1.875;
 }
 
-.header-logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-  color: #000000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  height: 252px;
+  background-color: #2f303a;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.menu .item {
+.footer-container {
   position: relative;
-  padding-top: 32px;
-  padding-bottom: 25px;
-}
-
-.menu .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.link.active-page {
-  color: #2196f3;
-}
-
-.active-page::after {
-  content: '';
-  position: absolute;
-  bottom: 0px;
   display: flex;
-  align-items: flex-end;
-  height: 4px;
-  width: 100%;
-  border-radius: 2px;
-  background-color: #2196f3;
 }
 
-.contacts-container {
-  margin-right: 70px;
+.footer-logo {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
-.header-contacts {
-  display: flex;
-  margin-left: auto;
+.adress {
+  display: block;
+  padding-bottom: 9px;
+  color: #ffffff;
+  font-style: normal;
 }
 
-.header-contacts .link {
-  display: inline-flex;
-  align-items: center;
+.connect {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.142;
+  text-transform: uppercase;
+  text-align: left;
+  color: #ffffff;
 }
 
-.header-contacts .item:not(:last-child) {
-  margin-right: 50px;
+.footer-contacts-links {
+  font-weight: 400;
+  line-height: 1.714;
+  letter-spacing: inherit;
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.icon-link {
-  display: flex;
-  align-items: center;
+.footer-contacts {
+  font-style: normal;
+  display: block;
 }
 
-.mail-icon {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.phone-icon {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
+.footer-contacts .item:not(:last-child) {
+  padding-bottom: 9px;
 }
 /*# sourceMappingURL=portfolio.css.map */

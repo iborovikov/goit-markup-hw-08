@@ -31,12 +31,24 @@ body {
 textarea {
   resize: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
-  width: 1200px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+
+  @media screen and (min-width: 480px) {
+    min-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+  }
 }
 .link {
   text-decoration: none;
@@ -60,7 +72,6 @@ textarea {
   }
 }
 .list {
-  display: flex;
   padding: 0px;
   margin: 0px;
   list-style: none;
