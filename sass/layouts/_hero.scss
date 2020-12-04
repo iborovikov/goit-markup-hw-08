@@ -1,5 +1,6 @@
 .hero-section {
-  padding: 118px 60px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-color: $hero-bg;
   background-image: linear-gradient(
@@ -47,6 +48,7 @@
 }
 @media screen and (min-width: 768px) {
   .hero-section {
+    min-width: 1200px;
     background-image: linear-gradient(
         to bottom,
         rgba(47, 48, 58, 0.4),

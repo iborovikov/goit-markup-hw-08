@@ -91,7 +91,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    width: 1200px;
   }
 }
 
@@ -596,7 +596,8 @@ img {
 }
 
 .hero-section {
-  padding: 118px 60px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-color: #c4c4c4;
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/mobile-hero.jpg);
@@ -624,6 +625,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero-section {
+    min-width: 1200px;
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/desktop-hero.jpg);
   }
 }
@@ -750,6 +752,13 @@ img {
 
 .duty-section {
   padding-bottom: 94px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .duty-section {
+    display: block;
+  }
 }
 
 .duty-title {
@@ -758,6 +767,10 @@ img {
 
 .duty-list .item:not(:last-child) {
   margin-right: 30px;
+}
+
+.duty-list {
+  display: flex;
 }
 
 .duty-list .item {
