@@ -928,7 +928,8 @@ img {
 }
 
 .member-foto {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 .member-name {
