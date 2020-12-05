@@ -1,13 +1,14 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  height: 252px;
   background-color: $dark-bg;
 }
 .footer-container {
-  position: relative;
-  display: flex;
+  text-align: center;
+  // position: relative;
+  // display: flex;
 }
+
 .footer-logo {
   display: block;
   color: $white;

@@ -128,11 +128,6 @@ img {
   text-align: center;
 }
 
-.section-title {
-  font-size: 36px;
-  line-height: 1.166;
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -498,13 +493,11 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  height: 252px;
   background-color: #2f303a;
 }
 
 .footer-container {
-  position: relative;
-  display: flex;
+  text-align: center;
 }
 
 .footer-logo {
