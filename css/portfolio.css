@@ -451,31 +451,49 @@ img {
 }
 
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  border: 1px solid #ececec;
-  border-right: none;
-  border-bottom: none;
-  border-left: none;
+  border-top: 1px solid #ececec;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 94px;
+@media screen and (min-width: 768px) {
+  .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.portfolio-list .item {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.portfolio-list .item:not(:last-child) {
   margin-bottom: 30px;
 }
 
-.portfolio-list .item:nth-child(3n) {
-  margin-right: 0px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .portfolio-list .item {
+    width: calc((100% - 1 * 30px) / 2);
+  }
+  .portfolio-list .item:nth-child(odd) {
+    margin-right: 30px;
+  }
 }
 
-.portfolio-list .item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
+@media screen and (min-width: 768px) {
+  .portfolio-list .item {
+    width: calc((100% - 2 * 30px) / 3);
+    margin-right: 30px;
+  }
+  .portfolio-list .item:nth-child(3n) {
+    margin-right: 0px;
+  }
+  .portfolio-list .item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
 }
 
 .portfolio-list .link:hover .overlay,
@@ -491,6 +509,7 @@ img {
 }
 
 .thumb {
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -525,7 +544,6 @@ img {
 
 .portfolio-text-box {
   width: 100%;
-  height: 100%;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
