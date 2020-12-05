@@ -248,7 +248,19 @@ img {
 .social-container {
   display: flex;
   flex-direction: column;
-  margin-right: 93px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 480px) {
+  .social-container {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social-container {
+    margin-right: 93px;
+  }
 }
 
 .social-icon.footer-social-icon {
@@ -266,6 +278,7 @@ img {
 }
 
 .subscribe-title {
+  margin-bottom: 20px;
   left: 0px;
   top: 0px;
   margin-bottom: 20px;
@@ -273,31 +286,40 @@ img {
   line-height: 1.25;
   text-transform: uppercase;
   color: #ffffff;
-  text-align: start;
+  text-align: center;
 }
 
-.subscride-form {
-  position: absolute;
-  right: 15px;
+@media screen and (min-width: 768px) {
+  .subscribe-title {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscride-form {
+    display: inline-flex;
+    flex-direction: column;
+  }
 }
 
 .subscribe-container {
-  position: relative;
-  width: 570px;
-  height: 86px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-container {
+    display: flex;
+  }
 }
 
 .subscribe-btn {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
   width: 200px;
   height: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
   padding-right: 28px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   background-color: #2196f3;
   font-size: 16px;
@@ -307,10 +329,23 @@ img {
   color: #ffffff;
 }
 
+@media screen and (min-width: 480px) {
+  .subscribe-btn {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-btn {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
 .subscribe-container input {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
+  margin-bottom: 20px;
   width: 358px;
   height: 50px;
   padding: 15px 16px;
@@ -322,6 +357,13 @@ img {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-container input {
+    margin-bottom: 0px;
+    margin-right: 12px;
+  }
 }
 
 .icon-send {
@@ -366,10 +408,6 @@ img {
   width: 100%;
   border-radius: 2px;
   background-color: #2196f3;
-}
-
-.contacts-container {
-  margin-right: 70px;
 }
 
 .header-contacts {
@@ -491,13 +529,57 @@ img {
 }
 
 .footer {
+  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 480px) {
+  .footer {
+    min-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    min-width: 1200px;
+  }
+}
+
 .footer-container {
   text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: inline-flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.contacts-container {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 480px) {
+  .contacts-container {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-container {
+    margin-right: 70px;
+    text-align: start;
+  }
 }
 
 .footer-logo {
@@ -518,8 +600,14 @@ img {
   font-size: 14px;
   line-height: 1.142;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .connect {
+    text-align: start;
+  }
 }
 
 .footer-contacts-links {
