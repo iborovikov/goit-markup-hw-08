@@ -372,7 +372,7 @@ img {
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  background-image: url(../../images/svg/uncheked.svg);
+  background-image: url(../images/svg/uncheked.svg);
   background-repeat: no-repeat;
 }
 
@@ -385,7 +385,7 @@ img {
 
 .original-chekbox:checked + .checkbox-icon {
   background-color: #2196f3;
-  background-image: url(../../images/svg/checked.svg);
+  background-image: url(../images/svg/checked.svg);
   border-radius: 4px;
 }
 
@@ -825,39 +825,39 @@ img {
   padding-bottom: 118px;
   text-align: center;
   background-color: #c4c4c4;
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/mobile-hero.jpg);
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/mobile-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/mobile-hero@2.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/mobile-hero@2.jpg);
   }
 }
 
 @media screen and (min-width: 480px) {
   .hero-section {
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/tablet-hero.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/tablet-hero.jpg);
   }
 }
 
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/tablet-hero@2x.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/tablet-hero@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-section {
     min-width: 1200px;
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/desktop-hero.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/desktop-hero.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/desktop-hero@2x.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/desktop-hero@2x.jpg);
   }
 }
 
@@ -960,19 +960,19 @@ img {
 }
 
 .benefits-list .antena-icon:before {
-  background-image: url(../../images/svg/antenna.svg);
+  background-image: url(.//images/svg/antenna.svg);
 }
 
 .benefits-list .clock-icon::before {
-  background-image: url(../../images/svg/clock.svg);
+  background-image: url(.//images/svg/clock.svg);
 }
 
 .benefits-list .diagram-icon::before {
-  background-image: url(../../images/svg/diagram.svg);
+  background-image: url(.//images/svg/diagram.svg);
 }
 
 .benefits-list .astronaut-icon::before {
-  background-image: url(../../images/svg/astronaut.svg);
+  background-image: url(.//images/svg/astronaut.svg);
 }
 
 .duty-section {
