@@ -156,6 +156,10 @@
   margin-right: 8px;
   background-image: url(../../images/svg/uncheked.svg);
   background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    left: 0px;
+    top: 4px;
+  }
 }
 .original-chekbox:checked + .checkbox-icon {
   background-color: $accent-cl;
