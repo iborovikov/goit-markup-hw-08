@@ -487,7 +487,6 @@ textarea {
 
 .menu {
   text-align: center;
-  display: inline-block;
   margin-bottom: 60px;
 }
 
@@ -524,19 +523,25 @@ textarea {
 }
 
 .link.active-page {
+  position: relative;
   color: #2196f3;
 }
 
 .active-page::after {
   content: '';
   position: absolute;
+  left: 0px;
   bottom: -8px;
-  display: flex;
-  align-items: flex-end;
   height: 4px;
   width: 100%;
   border-radius: 2px;
   background-color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .active-page::after {
+    bottom: -32px;
+  }
 }
 
 .header-contacts {
