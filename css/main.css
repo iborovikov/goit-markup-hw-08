@@ -241,8 +241,8 @@ textarea {
 @media screen and (min-width: 480px) {
   .modal {
     left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 450px;
   }
 }
@@ -347,8 +347,6 @@ textarea {
   left: 0px;
   font-size: 12px;
   line-height: 1.166;
-  position: relative;
-  left: 12px;
   display: block;
   margin-bottom: 30px;
 }
@@ -368,28 +366,29 @@ textarea {
   clip: rect(0 0 0 0);
 }
 
-.checkbox-icon {
-  position: absolute;
-  left: -8px;
+.chekbox-icon {
+  display: block;
+}
+
+.chekbox-icon::before {
+  content: '';
   display: inline-block;
-  width: 16px;
-  height: 16px;
   margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
   background-image: url(../images/svg/uncheked.svg);
-  background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 1200px) {
-  .checkbox-icon {
-    left: 0px;
-    top: 4px;
-  }
-}
-
-.original-chekbox:checked + .checkbox-icon {
+.original-chekbox:checked + .chekbox-icon::before {
+  content: '';
+  display: inline-block;
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
   background-color: #2196f3;
-  background-image: url(../images/svg/checked.svg);
-  border-radius: 4px;
+  background-size: cover;
+  background-image: url(../images/svg/cheked.svg);
 }
 
 .send-btn {

@@ -23,8 +23,8 @@
   text-align: center;
   @media screen and (min-width: 480px) {
     left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 450px;
   }
   @media screen and (min-width: 1200px) {
@@ -127,8 +127,6 @@
   left: 0px;
   font-size: 12px;
   line-height: 1.166;
-  position: relative;
-  left: 12px;
   display: block;
   margin-bottom: 30px;
   @media screen and (min-width: 1200px) {
@@ -144,24 +142,27 @@
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
-.checkbox-icon {
-  position: absolute;
-  left: -8px;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-  background-image: url(../images/svg/uncheked.svg);
-  background-repeat: no-repeat;
-  @media screen and (min-width: 1200px) {
-    left: 0px;
-    top: 4px;
-  }
+.chekbox-icon {
+  display: block;
 }
-.original-chekbox:checked + .checkbox-icon {
+.chekbox-icon::before {
+  content: '';
+  display: inline-block;
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  background-image: url(../images/svg/uncheked.svg);
+}
+.original-chekbox:checked + .chekbox-icon::before {
+  content: '';
+  display: inline-block;
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
   background-color: $accent-cl;
-  background-image: url(../images/svg/checked.svg);
-  border-radius: 4px;
+  background-size: cover;
+  background-image: url(../images/svg/cheked.svg);
 }
 .send-btn {
   padding: 10px 55px;
