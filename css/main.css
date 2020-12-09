@@ -897,6 +897,7 @@ textarea {
 
 .benefits-title {
   margin-bottom: 10px;
+  font-size: inherit;
   line-height: 1.143;
   text-transform: uppercase;
   text-align: center;
@@ -957,6 +958,7 @@ textarea {
 .benefits-list .item::before {
   content: '';
   display: block;
+  margin-bottom: 30px;
   width: 100%;
   height: 120px;
   background-repeat: no-repeat;
@@ -993,6 +995,8 @@ textarea {
 
 .duty-title {
   padding-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.166;
 }
 
 .duty-list .item:not(:last-child) {
@@ -1144,11 +1148,15 @@ textarea {
 
 .clients-title {
   margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.179;
 }
 
 @media screen and (min-width: 1200px) {
   .clients-title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.166;
   }
 }
 
@@ -1253,6 +1261,7 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .contacts-container {
+    margin-bottom: 0px;
     margin-right: 70px;
     text-align: start;
   }
