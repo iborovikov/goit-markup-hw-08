@@ -23,14 +23,11 @@
   text-align: center;
   @media screen and (min-width: 480px) {
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    right: 50%;
+    transform: translateX(-50%);
     width: 450px;
   }
-  @media screen and (min-width: 780px) {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  @media screen and (min-width: 1200px) {
     width: 528px;
   }
 }
@@ -134,7 +131,7 @@
   left: 12px;
   display: block;
   margin-bottom: 30px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
   }
@@ -156,7 +153,7 @@
   margin-right: 8px;
   background-image: url(../images/svg/uncheked.svg);
   background-repeat: no-repeat;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     left: 0px;
     top: 4px;
   }

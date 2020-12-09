@@ -1,7 +1,7 @@
 .benefits-section {
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -12,18 +12,18 @@
   line-height: 1.143;
   text-transform: uppercase;
   text-align: center;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     text-align: left;
   }
 }
 
 .benefits-list {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     .item:not(:last-child) {
       margin-bottom: 30px;
     }
   }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     .item:nth-child(2n + 1) {
       margin-right: 30px;
     }
@@ -31,28 +31,28 @@
       margin-bottom: 30px;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     .item:not(:last-child) {
       margin-right: 30px;
     }
   }
   .item {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
       width: calc((100% - 1 * 30px) / 2);
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       width: calc((100% - 3 * 30px) / 4);
     }
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     .item:nth-child(3) {
       margin-bottom: 0px;
     }
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .benefits-list {
     display: flex;
     flex-wrap: wrap;
