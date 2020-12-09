@@ -125,6 +125,7 @@
 .rules-accept-container {
   position: relative;
   left: 0px;
+
   font-size: 12px;
   line-height: 1.166;
   display: block;
@@ -142,11 +143,11 @@
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
-.chekbox-icon {
-  display: block;
-}
+
 .chekbox-icon::before {
   content: '';
+  position: relative;
+  top: 3px;
   display: inline-block;
   margin-right: 8px;
   width: 16px;

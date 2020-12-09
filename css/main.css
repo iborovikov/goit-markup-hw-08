@@ -366,12 +366,10 @@ textarea {
   clip: rect(0 0 0 0);
 }
 
-.chekbox-icon {
-  display: block;
-}
-
 .chekbox-icon::before {
   content: '';
+  position: relative;
+  top: 3px;
   display: inline-block;
   margin-right: 8px;
   width: 16px;
