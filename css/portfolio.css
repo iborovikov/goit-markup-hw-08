@@ -734,6 +734,10 @@ textarea {
   line-height: 1.875;
 }
 
+.portfolio-photo {
+  width: 100%;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
