@@ -141,6 +141,12 @@ textarea {
   color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .flex-box {
+    display: flex;
+  }
+}
+
 .btn {
   display: inline-block;
   font-family: inherit;
@@ -306,6 +312,7 @@ textarea {
   .subscride-form {
     display: inline-flex;
     flex-direction: column;
+    margin-left: auto;
   }
 }
 
@@ -731,6 +738,13 @@ textarea {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
 }
 
 .footer-container {
